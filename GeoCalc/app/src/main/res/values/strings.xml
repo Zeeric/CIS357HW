@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">GeoCalc</string>
+    <string name="Lat1">Enter Latitude 1</string>
+    <string name="Long1">Enter Longitude 1</string>
+    <string name="Lat2">Enter Latitude 2</string>
+    <string name="Long2">Enter Longitude 2</string>
+    <string name="Calc">Calculate</string>
+    <string name="Clear">Clear</string>
+    <string name="Dist">Distance:</string>
+    <string name="Bear">Bearing:</string>
+    <string name="Set">Settings</string>
+    <string name="DistU">Distance Units</string>
+    <string name="BearU">Bearing Units</string>
+    <string-array name="Dists">
+        <item>Kilometers</item>
+        <item>Miles</item>
+    </string-array>
+    <string-array name="Bears">
+        <item>Degrees</item>
+        <item>Mils</item>
+    </string-array>
+    <string name="title_activity_main">MainActivity</string>
+</resources>

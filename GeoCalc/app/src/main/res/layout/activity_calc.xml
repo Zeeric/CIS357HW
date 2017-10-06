@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ericsyoga.geocalc.CalcActivity">
+
+    <EditText
+        android:id="@+id/Lat1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="@string/Lat1"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <EditText
+        android:id="@+id/Long1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/Lat1"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="@string/Long1"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <EditText
+        android:id="@+id/Lat2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/Lat1"
+        android:layout_below="@+id/Lat1"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/Lat2"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <EditText
+        android:id="@+id/Long2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/Long1"
+        android:layout_below="@+id/Long1"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/Long2"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <Button
+        android:id="@+id/CalcButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/Lat2"
+        android:layout_below="@+id/Lat2"
+        android:layout_marginTop="20dp"
+        android:text="@string/Calc" />
+
+    <Button
+        android:id="@+id/ClearButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/Long2"
+        android:layout_below="@+id/Long2"
+        android:layout_marginTop="20dp"
+        android:text="@string/Clear" />
+
+    <TextView
+        android:id="@+id/Distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/CalcButton"
+        android:layout_below="@+id/CalcButton"
+        android:layout_marginTop="20dp"
+        android:text="@string/Dist"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Bearing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Distance"
+        android:layout_below="@+id/Distance"
+        android:layout_marginTop="20dp"
+        android:text="@string/Bear"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="@string/Set" />
+</RelativeLayout>
